@@ -1,8 +1,8 @@
-# UEFI HWID Spoofer
+# UEFI HWID woofer
 
 **ff0l**
 
-Two-stage hardware identifier spoofing for Windows: a **pre-OS UEFI application** patches in-memory SMBIOS tables before the kernel reads them, and an optional **userspace tool** adjusts OS-visible identifiers (MAC, volume serial, registry GUIDs).
+Two-stage hardware identifier woofing for Windows: a **pre-OS UEFI application** patches in-memory SMBIOS tables before the kernel reads them, and an optional **userspace tool** adjusts OS-visible identifiers (MAC, volume serial, registry GUIDs).
 
 Built with freestanding GCC (no EDK2). Install scripts target the EFI System Partition (ESP) or a bootable USB.
 
@@ -27,7 +27,7 @@ The UEFI app does **not** modify flash NVRAM or on-disk SMBIOS blobs permanently
 
 ### SMBIOS (UEFI)
 
-The spoofer locates the SMBIOS entry point via the EFI system configuration table (SMBIOS 3.0 or legacy), walks structures, and patches string fields in place. Replacement strings must not exceed the original length (padding with nulls).
+The woofer locates the SMBIOS entry point via the EFI system configuration table (SMBIOS 3.0 or legacy), walks structures, and patches string fields in place. Replacement strings must not exceed the original length (padding with nulls).
 
 | Type | Structure        | Fields touched                                      |
 |------|------------------|-----------------------------------------------------|
